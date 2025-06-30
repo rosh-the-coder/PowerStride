@@ -1,0 +1,176 @@
+<!--008555/leap green, 9BFCD9/icon or text clr, E1E5E6/ neutral grey light, 6D767C/ neutral grey dark, 007AFF/ neutral blue, black n white-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerStride</title>
+    <link rel="stylesheet" href="css\powerstride.css" />
+    <script
+      src="https://kit.fontawesome.com/5f270a1c37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/powerstride.html" id="navbar__logo">
+          <i class="fa-solid fa-bolt"></i> PowerStride
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/powerstride.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item navbar__dropdown">
+            <a href="/leap.html" class="navbar__links">
+              Leap <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__item">
+                <a href="/leap_transactions.html" class="dropdown__links">Transactions</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="/capping" class="dropdown__links">Capping</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="/more" class="dropdown__links">More</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar__btn">
+            <a href="/login.html" class="button">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Hero Section/ Leap-->
+    <div class="container">
+        
+
+        <section class="balance-section">
+            <p class="current-balance-label">Current balance</p>
+            <p class="current-balance">&euro;<span id="current-balance">12.00</span></p>
+            <p class="card-number">Card Number: 10410125880623 </p>
+        </section>
+
+        <section class="slider-section">
+            <div class="slider-wrapper">
+                <div id="circular-slider" class="slider">
+                    <button id="slider-handle"></button>
+                </div>
+                <div class="slider-value">
+                    <p>TOP-UP AMOUNT</p>
+                    <p><span id="top-up-value">0.00</span></p>
+                </div>
+            </div>
+            <p class="slider-instruction">To add credit, drag the dial or tap the numbers to enter an amount</p>
+        </section>
+
+        <div class="actions">
+            <button class="btn" id="continue-btn">Continue</button>
+            <button class="btn powerstride-btn" id="powerstride-btn">
+                <span class="lightning-icon">&#9889;</span> PowerStride - Check if you`re the Winner!
+            </button>
+        </div>
+    </div>
+
+   
+</html>
+
+ <!-- Footer Section -->
+ <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+          <a href="/">Careers</a> <a href="/">Investments</a>
+          <a href="/">Terms of Service</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/">Contact</a> <a href="/">Support</a>
+          <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Videos</h2>
+          <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+          <a href="/">Agency</a> <a href="/">Influencer</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a> <a href="/">Facebook</a>
+          <a href="/">Youtube</a> <a href="/">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo"><i class="fa-solid fa-bolt"></i>PowerStride</a>
+        </div>
+        <p class="website__rights">© POWERSTRIDE 2024. All rights reserved</p>
+        <div class="social__icons">
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+            target="_blank"
+            aria-label="Youtube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social__icon--link"
+            href="/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="scripts/powerstride.js"></script>
+  <script src="scripts/leap.js"></script>
+</body>
+</html>
